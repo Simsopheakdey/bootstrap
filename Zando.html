@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- Font awsome -->
+     <link rel="icon" href="image/logo1.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Zando.css" />
+    <title>Zando</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-white">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-1 col-md-1 col-sm-1 col-1">
+                    <ul class="d-xl-flex d-lg-none d-md-none d-sm-none gap-5 list-unstyled mb-0 d-none">
+                        <li class="text-uppercase fs-5 fw-medium">Woman</li>
+                        <li class="text-uppercase fs-5 fw-medium">Man</li>
+                        <li class="text-uppercase fs-5 fw-medium">Boys</li>
+                        <li class="text-uppercase fs-5 fw-medium">Girls</li>
+                    </ul>
+                    <button class="btn btn-light fs-4 d-xl-none" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                        role="button" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <!-- offcanvar -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                  Offcanvas
+                </h5> -->
+                            <img width="150px" src="images/logo.png" alt="" />
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- Body -->
+                            <h1>Menu</h1>
+                        </div>
+                    </div>
+                    <!-- offcanvar -->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5 col-5">
+                    <img class="ms-3 w-75" src="images/logo.png" alt="" />
+                </div>
+                <div class="col-xl-6 col-lg-8 col-md-8 col-sm-6 col-6">
+                    <div class="w-100 d-flex gap-3 justify-content-end align-items-center">
+                        <div class="input-group d-xl-flex d-lg-flex d-md-flex d-sm-none d-none">
+                            <span class="input-group-text" id="basic-addon1"><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Username"
+                                aria-describedby="basic-addon1" />
+                        </div>
+                        <button class="btn btn-light fs-5 d-xl-block d-lg-block d-md-none d-sm-none d-none">
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
+                        <button class="btn btn-light fs-5 d-xl-block d-lg-block d-md-none d-sm-none d-none">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button class="btn btn-light fs-5" data-bs-toggle="offcanvas" href="#offcanvasCart"
+                            role="button" aria-controls="offcanvasExample">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                        <!-- offcanvar -->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                                    Your Items
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <!-- Body -->
+                                <h1>Cart</h1>
+                            </div>
+                        </div>
+                        <!-- offcanvar -->
+                        <button class="btn btn-outline-success fs-6 d-sm-block d-none">
+                            Login
+                        </button>
+                        <button class="btn btn-primary fs-6">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Navbar -->
+
+    <!-- Slider -->
+    <div class="container-fluid">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner ratio ratio-21x9">
+                <!-- slider card -->
+                <div class="carousel-item h-100 active">
+                    <div
+                        class="container position-relative h-100 p-0 d-flex gap-4 justify-content-center align-items-end">
+                        <img class="w-100 position-absolute h-100" style="z-index: -1; object-fit: cover"
+                            src="image/silde1.png" alt="" />
+                        <button class="d-xl-block d-none mb-5 btn btn-outline-danger px-5 py-3 fw-bold border-3 fs-5">
+                            Shop Woman
+                        </button>
+                        <button class="d-xl-block d-none mb-5 btn btn-outline-danger px-5 py-3 fw-bold border-3 fs-5">
+                            Shop Man
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <div
+                        class="container position-relative h-100 p-0 d-flex gap-4 justify-content-center align-items-end">
+                        <img class="w-100 position-absolute h-100" style="z-index: -1; object-fit: cover"
+                            src="image/silde2.png" alt="" />
+                        <button class="d-xl-block d-none mb-5 btn btn-outline-danger px-5 py-3 fw-bold border-3 fs-5">
+                            Shop Woman
+                        </button>
+                        <button class="d-xl-block d-none mb-5 btn btn-outline-danger px-5 py-3 fw-bold border-3 fs-5">
+                            Shop Man
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <div
+                        class="container position-relative h-100 p-0 d-flex gap-4 justify-content-center align-items-end">
+                        <img class="w-100 position-absolute h-100" style="z-index: -1; object-fit: cover"
+                            src="image/silde3.png" alt="" />
+                        <button class="d-xl-block d-none mb-5 btn btn-outline-danger px-5 py-3 fw-bold border-3 fs-5">
+                            Shop Woman
+                        </button>
+                        <button class="d-xl-block d-none mb-5 btn btn-outline-danger px-5 py-3 fw-bold border-3 fs-5">
+                            Shop Man
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <div class="bg-black d-flex justify-content-center align-items-center rounded-circle"
+                    style="width: 50px; height: 50px; margin-right: 100px">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </div>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <div class="bg-black d-flex justify-content-center align-items-center rounded-circle"
+                    style="width: 50px; height: 50px; margin-left: 100px">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </div>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- End of Slider -->
+
+    <!-- brand section -->
+    <div class="container-fluid">
+        <div class="container d-flex justify-content-between">
+            <div class="row">
+                <div class="col">
+                    <img width="100%" src="image/zando-3.png" alt="" />
+                </div>
+                <div class="col">
+                    <img width="100%" src="image/TEN11.png" alt="" />
+                </div>
+                <div class="col">
+                    <img width="100%" src="image/gatoni.png" alt="" />
+                </div>
+                <div class="col">
+                    <img width="100%" src="image/routine.png" alt="" />
+                </div>
+                <div class="col">
+                    <img width="100%" src="image/361.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end brand section -->
+
+    <!-- Product section -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row row-gap-4">
+                <div class="col-4 p-0 pe-4">
+                    <img class="w-100 h-100" src="image/brand1.png" alt="" />
+                </div>
+                <div class="col-4 p-0 px-2">
+                    <img class="w-100 h-100" src="image/brand2.png" alt="" />
+                </div>
+                <div class="col-4 p-0 ps-4">
+                    <img class="w-100 h-100" src="image/brand3.png" alt="" />
+                </div>
+                <div class="col-4 p-0 pe-4">
+                    <img class="w-100 h-100" src="image/brand4.png" alt="" />
+                </div>
+                <div class="col-4 p-0 px-2">
+                    <img class="w-100 h-100" src="image/brand5.png" alt="" />
+                </div>
+                <div class="col-4 p-0 ps-4">
+                    <img class="w-100 h-100" src="image/brand6.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container p-0">
+            <div class="d-flex justify-content-between align-items-center mt-5">
+                <h2 class="fs-2 fw-semibold ">New Arrival </h2>
+                 <a class="text-decoration-none fs-5 ">Shop More</a>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <img class="w-100" src="image/IMG_10017-cr-450x672.jpg" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                      <div class="">
+                        <h3 class="fs-5 fw-semibold">USD 15$</h3>
+                        <p class="fs-6">Regular Fitted Body Suit</p>
+                      </div>
+                    <i class="fa-regular fa-heart fs-4"></i>
+                    
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="image/card.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                      <div class="">
+                        <h3 class="fs-5 fw-semibold">USD 15$</h3>
+                        <p class="fs-6">Regular Fit T-Shirts</p>
+                      </div>
+                    <i class="fa-regular fa-heart fs-4"></i>
+                    
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="image/card1.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                      <div class="">
+                        <h3 class="fs-5 fw-semibold">USD 15$</h3>
+                        <p class="fs-6">Cropped Fitted Tops</p>
+                      </div>
+                    <i class="fa-regular fa-heart fs-4"></i>
+                    
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="image/card2.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                      <div class="">
+                        <h3 class="fs-5 fw-semibold">USD 15$</h3>
+                        <p class="fs-6">Floral Print Midi Sundress</p>
+                      </div>
+                    <i class="fa-regular fa-heart fs-4"></i>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container p-0">
+            <div class="d-flex justify-content-between align-items-center mt-5">
+                <h2 class="fs-2 fw-semibold ">FootWear!</h2>
+                <a class="text-decoration-none fs-5 ">Shop More</a>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <img class="w-100" src="image/boy1.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="">
+                            <h3 class="fs-5 fw-semibold">US $20.59</h3>
+                            <p class="fs-6">Knitted Vest</p>
+                        </div>
+                       
+                        <i class="fa-regular fa-heart fs-4"></i>
+    
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="image/boy2.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="">
+                            <h3 class="fs-5 fw-semibold">USD17.50$</h3>
+                            <p class="fs-6">Loose Fit Shirts</p>
+                        </div>
+                        <i class="fa-regular fa-heart fs-4"></i>
+    
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="image/boy3.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="">
+                            <h3 class="fs-5 fw-semibold">USD 105$</h3>
+                            <p class="fs-6">Loose Fit T-Shirts</p>
+                        </div>
+                        <i class="fa-regular fa-heart fs-4"></i>
+    
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="image/boy5.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="">
+                            <h3 class="fs-5 fw-semibold">USD 100$</h3>
+                            <p class="fs-6">Knitted Cardigan</p>
+                        </div>
+                        <i class="fa-regular fa-heart fs-4"></i>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container p-0">
+            <div class="d-flex justify-content-between align-items-center mt-5">
+                <h2 class="fs-2 fw-semibold ">New Arrival </h2>
+                <a class="text-decoration-none fs-5 ">Shop More</a>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <img class="w-100" src="image/shose1.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="">
+                            <h3 class="fs-5 fw-semibold">USD 15$</h3>
+                            <p class="fs-6">Sport Life Running Shoes</p>
+                        </div>
+                        <i class="fa-regular fa-heart fs-4"></i>
+    
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="image/shose2.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="">
+                            <h3 class="fs-5 fw-semibold">USD 15$</h3>
+                            <p class="fs-6">Skateboard Sneakers
+</p>
+                        </div>
+                        <i class="fa-regular fa-heart fs-4"></i>
+    
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="image/shose3.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="">
+                            <h3 class="fs-5 fw-semibold">USD 15$</h3>
+                            <p class="fs-6">Skateboarding Sneakers</p>
+                        </div>
+                        <i class="fa-regular fa-heart fs-4"></i>
+    
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="w-100" src="image/shose4.png" alt="">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="">
+                            <h3 class="fs-5 fw-semibold">USD 15$</h3>
+                            <p class="fs-6">Sport Life Running Socks</p>
+                        </div>
+                        <i class="fa-regular fa-heart fs-4"></i>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+
+    </div>
+   
+    <!-- End Product section -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
